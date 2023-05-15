@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instruction logique</title>
+    <title>Contactez Nous</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
@@ -26,16 +26,20 @@
         </nav>
     </header>
     <main>
-        <h2 class="Instruction-h2">Instructions de branchement</h2>
+        <section class="contact-us">
+        <h2>Contactez-Nous</h2>
         <div class="under-line"></div>
-        <section class="instruction-arithmetique">
-            <p class="text text-1"> Les instructions logiques sont utilisées pour effectuer des opérations de logique booléenne sur des données binaires. Elles incluent des opérations telles que l'ET (AND), le OU (OR), le OU exclusif (XOR) et le NON (NOT). Les instructions logiques sont souvent utilisées pour implémenter des algorithmes de traitement de données et peuvent être appliquées à des données enregistrées dans des registres, en mémoire ou sur des ports d'E/S. Les instructions logiques ont généralement un ou deux opérandes et stockent le résultat dans l'un des opérandes ou dans un registre séparé.</p>
-            <ul>
-            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>NOT : </b> Effectue une opération de négation sur un opérande, inversant chaque bit (de 0 à 1 ou de 1 à 0).</p></li>
-            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>AND : </b> Effectue une opération de ET logique bit à bit sur deux opérandes, donnant un résultat de 1 si les bits correspondants sont tous les deux égaux à 1.</p></li>
-            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>OR  : </b> Effectue une opération de OU logique bit à bit sur deux opérandes, donnant un résultat de 1 si au moins un des bits correspondants est égal à 1.</p></li>
-            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>XOR :  </b>  Effectue une opération de OU exclusif logique bit à bit sur deux opérandes, donnant un résultat de 1 si les bits correspondants sont différents.</p></li>
-        </ul>
+        <p>Contactez notre equipe pour en savoir plus sur ArchiMind</p>
+        <article class="contact-us-container">
+        <form action="http://localhost:80/project_website/send-email.php"  method="POST">
+        <div class="name"><label for="name">Nom :</label><input type="text" id="name" name="name" required></div>
+        <div class="prenom"><label for="prenom">Prenom :</label><input type="text" id="Prenom" name="Prenom" required></div>
+        <div class="email"><label for="email">Email :</label><input type="email" id="email" name="email" required></div>
+        <div class="object"><label for="object">Objet :</label><input type="text" id="object" name="object" required></div>
+        <div class="message"><label for="message">Message :</label><textarea name="message" id="message" cols="30" rows="10"></textarea></div>
+        <div class="contact-btn"><button type="submit">Contactez-Nous</button></div>
+        </form>
+        </article>
         </section>
     </main>
     <footer>
