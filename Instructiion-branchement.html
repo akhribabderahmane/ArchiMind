@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruction de branchement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./logo.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./logo.png" alt=""><span class="word-archimind"><span class="first-word">Archi</span><span class="second-word">Mind</span></span>
+          <ul class="navbar-links">
+            <li><a href="./Home-page.html" id="style-2" data-replace="Accueil"><span>Accueil</span></a></li>
+            <li><a href="./Home-page.html" id="style-2" data-replace="Telecharger"><span>Telecharger</span></a></li>
+            <li><a href="#" id="style-2" data-replace="Guide"><span>Guide</span></a></li>
+            <li><a href="#documentation" id="style-2" data-replace="Documentation"><span>Documentation</span></a></li>
+            <li><a href="#" id="style-2" data-replace="Contactez-Nous"><span>Contactez-Nous</span></a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="Instruction-h2">Instructions de branchement</h2>
+        <div class="under-line"></div>
+        <section class="instruction-arithmetique">
+            <p class="text text-1"> Les instructions de branchement permettent au processeur de modifier le flux d'exécution du programme en sautant à une adresse différente dans la mémoire. Elles peuvent être conditionnelles ou inconditionnelles et sont utilisées pour implémenter des structures de contrôle de programme telles que les boucles et les structures conditionnelles. Les instructions de branchement inconditionnelles sautent toujours à une adresse différente, tandis que les instructions de branchement conditionnelles ne le font que si une condition spécifiée est remplie.</p>
+            <ul>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>JMP (Jump) : </b>  Cette instruction inconditionnelle de branchement permet de sauter à une adresse spécifique dans la mémoire sans aucune condition. Elle est souvent utilisée pour implémenter des boucles, des fonctions, des routines de traitement des erreurs et pour transférer le contrôle à des parties différentes d'un programme.</p></li>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>LOOP :</b> Cette instruction est utilisée pour implémenter des boucles avec une compteur de répétitions. Elle décrémente le compteur et saute à une adresse spécifique si le compteur n'est pas nul. La boucle continue jusqu'à ce que le compteur atteigne zéro.</p></li>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>LOOPZ/LOOPE et LOOPNZ/LOOPNE : </b>  Ces instructions sont des variantes de la boucle LOOP. LOOPZ et LOOPE sautent à une adresse spécifique si le compteur n'est pas zéro et si le drapeau ZF (indicateur de zéro) est défini, tandis que LOOPNZ et LOOPNE sautent si le compteur n'est pas zéro et si le drapeau ZF est effacé.</p></li>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>CMP (Compare) :</b> Cette instruction compare deux opérandes et met à jour les indicateurs de drapeaux en fonction du résultat de la comparaison. Elle ne modifie pas les opérandes d'origine. CMP est souvent utilisé avant les instructions de saut conditionnelles pour déterminer si un saut doit être effectué ou non.</p></li>
+        </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 | 2CP - Equipe 32 | Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

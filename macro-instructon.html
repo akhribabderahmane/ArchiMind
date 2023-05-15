@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro instruction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./logo.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./logo.png" alt=""><span class="word-archimind"><span class="first-word">Archi</span><span class="second-word">Mind</span></span>
+          <ul class="navbar-links">
+            <li><a href="./Home-page.html" id="style-2" data-replace="Accueil"><span>Accueil</span></a></li>
+            <li><a href="./Home-page.html" id="style-2" data-replace="Telecharger"><span>Telecharger</span></a></li>
+            <li><a href="#" id="style-2" data-replace="Guide"><span>Guide</span></a></li>
+            <li><a href="./documentation-page.html" id="style-2" data-replace="Documentation"><span>Documentation</span></a></li>
+            <li><a href="./contactez-nous.html" id="style-2" data-replace="Contactez-Nous"><span>Contactez-Nous</span></a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="Instruction-h2">Macro-instruction</h2>
+        <div class="under-line"></div>
+        <section class="instruction-arithmetique">
+            <p class="text" id="ass-text">Pour mieux structurer les programmes, et éviter l'écriture répétée d'un ensemble d'instructions fréquemment utilisé, les Sous-programmes (Procédures), et les Macro-instructions, offrent la possibilité de grouper une séquence d'instructions. </p>
+            <p class="text" id="ass-text">En somme, une Macro-instruction est un ordre donné à la machine, lequel est destiné à produire une séquence d'instructions en langage assembleur.</p>
+            <p class="text" id="ass-text"><b>Définition :</b></p>
+            <p class="text" id="ass-text"> C'est l'isolement d'une séquence d'instructions que l'on veut éviter de répéter en lui attribuant un nom symbolique, auquel on pourra lui faire référence (appel). A chaque référence, l'assembleur remplace celle-ci par la séquence d'instructions correspondante.</p>
+            <p class="text" id="ass-text">Une macro-instruction est une suite d'instructions paramétrée, où les paramètres peuvent être :</p>
+            <ul >
+                <li></span><p class="text" id="ass-text"></p>Etiquette;</li>
+                <li><p class="text" id="ass-text"></p>Commande (mnémonique ou code opération);</li>
+                <li><p class="text" id="ass-text"></p>Opérande.</li>
+            </ul>
+            <p class="text" id="ass-text" id="remarque"><b>Remarques :</b></p>
+            <p class="text" id="ass-text"> Une macro-instruction ne peut être utilisée que si elle est définie.</p>
+            <p class="text" id="ass-text"> Au moment de sa définition, aucun code n'est généré contrairement à une procédure. Son nom, ses paramètres, ainsi que son corps sont sauvegardés dans des tables prédéfinies.</p>
+            <p class="text" id="ass-text">L'appel de la macro-instruction ne peut se faire qu'après sa définition.</p>
+            <p class="text" id="ass-text">L'appel est remplacé par le corps (séquence d'instructions) de la macro-instruction tout en remplaçant les paramètres de définitions par les paramètres d'appel.</p>   
+            <p class="text" id="ass-text" id="remarque"><b>Conclusion:</b></p>
+            <p class="text" id="ass-text">Différence avec le S/P, c'est que le code de ce dernier existe en 1 seul exemplaire en MC, et c'est lors de l'exécution. L'appel au S/PG provoque le branchement au S/P.</p>
+            <p class="text" id="ass-text">Conclusion:
+
+                Différence avec le S/P, c'est que le code de ce dernier existe en 1 seul exemplaire en MC, et c'est lors de l'exécution. L'appel au S/PG provoque le branchement au S/P.
+                
+                Le principal avantage du S/P est la minimisation du code (1 seul exemplaire), alors que la Macro nécessite autant de fois de codes que d'appels.
+                    
+                </p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 | 2CP - Equipe 32 | Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

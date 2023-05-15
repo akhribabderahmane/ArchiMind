@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruction de decalage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./logo.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./logo.png" alt=""><span class="word-archimind"><span class="first-word">Archi</span><span class="second-word">Mind</span></span>
+          <ul class="navbar-links">
+            <li><a href="./Home-page.html" id="style-2" data-replace="Accueil"><span>Accueil</span></a></li>
+            <li><a href="./Home-page.html" id="style-2" data-replace="Telecharger"><span>Telecharger</span></a></li>
+            <li><a href="#" id="style-2" data-replace="Guide"><span>Guide</span></a></li>
+            <li><a href="#documentation" id="style-2" data-replace="Documentation"><span>Documentation</span></a></li>
+            <li><a href="./contactez-nous.html" id="style-2" data-replace="Contactez-Nous"><span>Contactez-Nous</span></a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="Instruction-h2">Instructions de decalage</h2>
+        <div class="under-line"></div>
+        <section class="instruction-arithmetique">
+            <p class="text text-1"> Les instructions de décalage (SHL/SHR/SAL/SAR) sont des instructions logiques qui permettent de décaler les bits d'une valeur vers la gauche (SHL/SAL) ou vers la droite (SHR/SAR). Elles sont souvent utilisées pour réaliser des opérations de multiplication ou de division par une puissance de deux. L'instruction SHL/SAL décale les bits vers la gauche, ajoutant des zéros à droite et affectant le bit de signe lors de l'utilisation de l'instruction SAL. L'instruction SHR/SAR décale les bits vers la droite, en ajoutant des zéros à gauche pour SHR et en conservant le bit de signe pour SAR.</p>
+            <ul>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>SHL/SAL (Shift Logical/Arithmetic Left)  :  </b>Décale les bits d'un opérande vers la gauche de N positions, en ajoutant des zéros à droite. L'instruction SAL affecte le bit de signe.</p></li>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>SHR/SAR (Shift Logical/Arithmetic Right) : </b> Décale les bits d'un opérande vers la droite de N positions, en ajoutant des zéros à gauche pour SHR et en conservant le bit de signe pour SAR.</p></li>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>ROR/ROL (Rotate Right/Left) :  </b> Effectue une rotation des bits d'un opérande vers la droite ou la gauche. Les bits qui sortent d'un côté sont réinsérés de l'autre côté .</p></li>
+            <li><p><span><img src="./right-arrow.png" alt="flech"></span><b>RCR/RCL (Rotate Carry Right/Left) :</b> Effectue une rotation des bits d'un opérande vers la droite ou la gauche, en incluant le bit de retenue (CF) dans la rotation. Les bits qui sortent d'un côté sont réinsérés de l'autre côté.</p></li>
+        </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 | 2CP - Equipe 32 | Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

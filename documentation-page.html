@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <title>Documentation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="icon" type="image/png" href="./logo.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <img class="logo" src="./logo.png" alt=""><span class="word-archimind"><span class="first-word">Archi</span><span class="second-word">Mind</span></span>
+          <ul class="navbar-links">
+            <li><a href="./Home-page.html" id="style-2" data-replace="Accueil"><span>Accueil</span></a></li>
+            <li><a href="#telechargement" id="style-2" data-replace="Telecharger"><span>Telecharger</span></a></li>
+            <li><a href="#" id="style-2" data-replace="Guide"><span>Guide</span></a></li>
+            <li><a href="./documentation-page.html" id="style-2" data-replace="Documentation"><span>Documentation</span></a></li>
+            <li><a href="./contactez-nous.html" id="style-2" data-replace="Contactez-Nous"><span>Contactez-Nous</span></a></li>
+          </ul>
+        </nav>
+    </header>
+    <!--------------------------------------------------------- Documentation ---------------------------------------------------->
+    <section class="documentation doc-page" >
+        <h2 id="documentation" class="h2-doc">Documentation</h2>
+        <div class="under-line"></div>
+        <div class="documentation-container">
+        <article class="text-side">
+          <p>La section documentation est dédiée à fournir un contenu pédagogique détaillé sur le programme de l'assembleur et du miasm. Les cours sont organisés et présentés d'une manière claire et concise, offrant une ressource de référence complète pour les étudiants.</p>
+        </article>
+        <article class="pic-side">
+          <img src="./Library_Freepik.jpg" alt="">
+        </article>
+      </div>
+      </section>
+      <!--------------------------------------------------------- Documentation ---------------------------------------------------->
+      <!--------------------------------------------------------- doc-titles ---------------------------------------------------->
+      <section class="doc-titles">
+        <article class="item item-1" onclick="goToPage('./presentation-machine.html')">
+            <img src="./signet (1) 1.png" alt="">
+            <p>Présentation de la machine<br><br></p>
+        </article>
+       <article class="item item-2" onclick="goToPage('./jeux-d\'instruction.html')">
+            <img src="./signet (1) 1.png" alt="">
+            <p>Jeux d'instructions<br><span>.<br>.</span></p>
+        </article>
+      <article class="item item-3" onclick="goToPage('./Language-ass.html')">
+            <img src="./signet (1) 1.png" alt="">
+            <p>Chapitre 1 :<br> Présentation du Langage Assembleur</p>
+        </article>
+       <article class="item item-4" onclick="goToPage('./macro-instructon.html')">
+            <img src="./signet (1) 1.png" alt="">
+            <p>Chapitre 2 :<br> Macro Instruction <br><span>.</span></p>
+        </article>
+      </section>
+      <!--------------------------------------------------------- doc-titles ---------------------------------------------------->
+      <footer>
+        <p>© 2023 | 2CP - Equipe 32 | Tous droits réservés.</p>
+    </footer>
+    <script>
+      function goToPage(url) {
+        window.location.href = url;
+      }
+      </script>
