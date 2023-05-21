@@ -20,25 +20,8 @@ body{
 .navbar .logo{
     grid-column: 1/2;
     margin-left: 2rem;
-    width: 3rem;
+    width: 16vw;
     cursor: pointer;
-}
-.navbar .word-archimind{
-  position: relative;
-  right: 11.5rem;
-  cursor: pointer;
-}
-.first-word{
-  font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: 740;
-font-size: 1.7rem;
-}
-.second-word{
-  font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 1.7rem;
 }
 .navbar .navbar-links{
     grid-column: 3/4;
@@ -257,6 +240,9 @@ font-size: 1.7rem;
   font-size: 1.6rem;
   line-height: 30px;
   margin-top: 1rem;
+}
+.why-archimind .items-container .item a{
+  cursor: pointer;
 }
 .why-archimind .items-container .item img{
   width: 8rem;

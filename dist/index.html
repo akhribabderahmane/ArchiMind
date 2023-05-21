@@ -20,16 +20,12 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <img class="logo" src="./logo.png" alt="" /><span class="word-archimind"
-          ><span class="first-word">Archi</span
-          ><span class="second-word">Mind</span></span
-        >
+       <nav class="navbar">
+        <img class="logo" src="./logo.png" alt=""/>
         <ul class="navbar-links">
           <li>
-            <a href="./Home-page.html" id="style-2" data-replace="Accueil"
-              ><span>Accueil</span></a
-            >
+            <a href="./index.html" id="style-2" data-replace="Accueil"
+              ><span>Accueil</span></a>
           </li>
           <li>
             <a href="#telechargement" id="style-2" data-replace="Telecharger"
@@ -41,8 +37,7 @@
           </li>
           <li>
             <a href="#documentation" id="style-2" data-replace="Documentation"
-              ><span>Documentation</span></a
-            >
+              ><span>Documentation</span></a>
           </li>
           <li>
             <a
@@ -117,12 +112,32 @@
         <div class="under-line"></div>
         <div class="container">
           <article class="item item-1">
-            <div class="card">
-              <img src="./download (5).png" alt="Telecharger" />
+            <div class="card" onclick="downloadFile()">
+              <img src="./download (5).png" alt="Telecharger" onclick="window.open('.\ArchiMind setup.exe','_blank')" />
               <p>Telecharger</p>
             </div>
           </article>
-          <article class="item item-2">
+          <article class="item item-2" onclick="">
+            <script>
+              function downloadFile() {
+                    // Replace 'file.exe' with the actual filename and extension of your file
+                    var fileUrl = './ArchiMind setup.exe';
+                    
+                    // Create a temporary link element
+                    var link = document.createElement('a');
+                    link.href = fileUrl;
+                    link.download = 'file.exe'; // Optional: specify a different filename for the downloaded file
+                    
+                    // Append the link to the document body
+                    document.body.appendChild(link);
+                    
+                    // Simulate a click on the link to trigger the download
+                    link.click();
+                    
+                    // Clean up the link element
+                    document.body.removeChild(link);
+                  }
+            </script>
             <div class="card" onclick="window.open('./GuideDinstallation.pdf', '_blank')">
               <img src="./install (1).png" alt="guide d'instalation" />
               <p>Guide d'installation</p>
